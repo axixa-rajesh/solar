@@ -1,5 +1,5 @@
 <?php 
-function request($key=null){
+function request($key=null){ 
     $robj=(object)['controller'=>'CategoriesController','method'=>'index','get'=>$_GET,'post'=>$_POST,'para'=>null];
     if($_GET){
         $url=explode('/',rtrim($_GET['url'],'/'));
